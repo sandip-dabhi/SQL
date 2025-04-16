@@ -1,0 +1,20 @@
+What is normalization? Why is it important?
+Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity.
+
+It breaks a large table into smaller related tables and uses keys to connect them.
+
+Benefits:
+Eliminates duplicate data
+
+Reduces data anomalies (update, insert, delete)
+
+Makes data more structured and efficient
+
+Common Normal Forms:
+1NF: Eliminate repeating groups; atomic values only.
+
+2NF: Meet 1NF + remove partial dependencies.
+
+3NF: Meet 2NF + remove transitive dependencies.
+
+Normalization helps maintain a clean, efficient schema in relational databases.
