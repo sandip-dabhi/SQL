@@ -1,0 +1,18 @@
+What are primary keys and foreign keys?
+A Primary Key is a column (or combo of columns) that uniquely identifies each row in a table.
+
+Cannot be null
+
+Only one per table
+
+A Foreign Key is a column that creates a relationship between two tables, referencing the primary key of another table.
+
+Example:
+Employee(emp_id PRIMARY KEY, dept_id)
+
+Department(dept_id PRIMARY KEY)
+
+Employee.dept_id is a foreign key referencing Department.dept_id
+
+Primary Key = Identity
+Foreign Key = Relationship
