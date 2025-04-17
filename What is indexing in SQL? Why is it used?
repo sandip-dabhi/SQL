@@ -1,0 +1,11 @@
+What is indexing in SQL? Why is it used?
+An index is a database object used to speed up data retrieval operations on a table.
+
+Think of it like a book index—it helps find data quickly without scanning the whole book.
+
+Types:
+Single-column index – on one column
+
+Composite index – on multiple columns
+
+Unique index – ensures all values are unique
