@@ -1,0 +1,19 @@
+What is the difference between WHERE and HAVING in SQL?
+WHERE is used to filter rows before grouping (works on raw rows).
+
+HAVING is used to filter groups after aggregation (like GROUP BY).
+
+Example:
+
+-- Filters rows before grouping
+SELECT department, COUNT(*) 
+FROM Employee
+WHERE salary > 30000 
+GROUP BY department;
+
+-- Filters grouped results
+SELECT department, COUNT(*) 
+FROM Employee
+GROUP BY department
+HAVING COUNT(*) > 5;
+ Use WHERE for row-level filters and HAVING for group-level filters.
