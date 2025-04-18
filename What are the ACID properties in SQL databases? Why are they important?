@@ -1,0 +1,31 @@
+What are the ACID properties in SQL databases? Why are they important?
+ACID stands for Atomicity, Consistency, Isolation, Durability – the four key properties that ensure reliable and secure database transactions.
+
+🔹 Atomicity
+
+A transaction is all or nothing.
+
+If one part fails, the entire transaction is rolled back.
+ Example: Money transfer between two accounts – both debit and credit must succeed.
+
+🔹 Consistency
+
+The database must go from one valid state to another valid state.
+
+All rules, constraints, and data types must remain valid.
+ Example: A foreign key constraint shouldn't be violated after a transaction.
+
+🔹 Isolation
+
+Transactions must not interfere with each other.
+
+Results of one transaction should not be visible to others until it's complete.
+ Example: If two people try to book the same movie ticket at once, only one should succeed.
+
+🔹 Durability
+
+Once a transaction is committed, the changes are permanent – even if the system crashes afterward.
+ Example: After booking a ticket, the booking record must stay safe.
+
+Why it matters:
+ACID ensures data integrity, accuracy, and reliability, especially in multi-user and critical systems like banking or inventory management.
