@@ -1,0 +1,10 @@
+What is the difference between UNION and UNION ALL?
+UNION combines results of two queries and removes duplicates.
+
+UNION ALL combines all results, including duplicates.
+ Example:
+SELECT name FROM Students
+UNION
+SELECT name FROM Teachers;
+ Use UNION when you want only unique rows.
+ Use UNION ALL when you want faster performance and don't care about duplicates.
