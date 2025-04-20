@@ -1,0 +1,15 @@
+What is a stored procedure in SQL?
+A stored procedure is a precompiled block of SQL code stored in the database and can be reused.
+
+ Benefits:
+Improves performance (since it's precompiled)
+
+Promotes reusability and modularity
+
+Adds security and simplifies logic
+ Example:
+
+CREATE PROCEDURE GetEmployeeByDept(IN deptName VARCHAR(50))
+BEGIN
+    SELECT * FROM Employee WHERE department = deptName;
+END;
