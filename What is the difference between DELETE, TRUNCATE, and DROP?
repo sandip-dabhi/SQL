@@ -1,0 +1,40 @@
+What is the difference between DELETE, TRUNCATE, and DROP?
+1. DELETE
+Used to remove specific rows from a table using a WHERE clause.
+
+Can be rolled back (transaction-safe).
+
+Does not remove the table structure.
+
+Triggers ON DELETE events (if defined).
+
+Slower compared to TRUNCATE and DROP (logs each row deletion).
+
+ Example:
+DELETE FROM Employee WHERE id = 5;
+
+2. TRUNCATE
+Used to remove all rows from a table (resets it).
+
+Cannot be rolled back in most RDBMS (non-transactional).
+
+Keeps the table structure and schema.
+
+Resets identity/auto-increment values.
+
+Faster than DELETE as it does not log individual row deletions.
+
+ Example:
+TRUNCATE TABLE Employee;
+
+3. DROP
+Used to remove the entire table, including its structure and data.
+
+Cannot be rolled back (non-recoverable).
+
+Completely removes table definition from the database.
+
+Fastest of the three.
+
+ Example:
+DROP TABLE Employee;
