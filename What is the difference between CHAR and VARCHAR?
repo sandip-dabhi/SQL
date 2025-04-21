@@ -1,0 +1,31 @@
+What is the difference between CHAR and VARCHAR?
+
+CHAR(n)
+Stores fixed-length character strings.
+
+If the data is shorter than n, it pads the remaining space with spaces.
+
+Always occupies n bytes, regardless of actual string length.
+
+Slightly faster in performance because of fixed size.
+
+Ideal for data with known/constant length, like postal codes, country codes, etc.
+
+ Example:
+
+CHAR(10)
+
+VARCHAR(n)
+Stores variable-length character strings.
+
+Only stores as many characters as needed—no padding.
+
+Occupies 1 to n bytes, depending on string length (plus 1 or 2 extra bytes for length info).
+
+More space-efficient, especially for large datasets with variable-length data.
+
+Ideal for names, addresses, descriptions, etc.
+
+ Example:
+
+VARCHAR(10)
