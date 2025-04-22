@@ -1,0 +1,18 @@
+What is the difference between INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN?
+🔹 INNER JOIN
+Returns rows that match in both tables
+
+🔹 LEFT JOIN
+Returns all rows from the left table + matching rows from the right (NULL if no match)
+
+🔹 RIGHT JOIN
+Returns all rows from the right table + matching rows from the left (NULL if no match)
+
+🔹 FULL OUTER JOIN
+Returns all rows from both tables (NULL if no match on either side)
+
+ Example:
+SELECT * FROM A INNER JOIN B ON A.id = B.id;
+SELECT * FROM A LEFT JOIN B ON A.id = B.id;
+SELECT * FROM A RIGHT JOIN B ON A.id = B.id;
+SELECT * FROM A FULL OUTER JOIN B ON A.id = B.id;
