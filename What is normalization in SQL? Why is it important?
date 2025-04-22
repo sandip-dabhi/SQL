@@ -1,0 +1,19 @@
+What is normalization in SQL? Why is it important?
+Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity.
+
+It breaks down large tables into smaller related tables.
+
+ Key benefits:
+Avoids duplicate data
+
+Ensures consistency
+
+Makes updates more efficient
+
+ Common Normal Forms:
+1NF (First Normal Form) – No repeating groups or arrays
+
+2NF (Second Normal Form) – 1NF + no partial dependency
+
+3NF (Third Normal Form) – 2NF + no transitive dependency
+
