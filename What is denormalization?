@@ -1,0 +1,11 @@
+What is denormalization?
+Denormalization is the opposite of normalization: combining tables to improve read performance.
+
+Used in systems where fast retrieval is more important than update efficiency (e.g., reporting, data warehousing).
+
+ Key points:
+Reduces number of joins
+
+Can lead to data redundancy
+
+Often used with indexing and caching to improve performance
