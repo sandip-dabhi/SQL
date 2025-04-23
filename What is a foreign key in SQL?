@@ -1,0 +1,16 @@
+What is a foreign key in SQL?
+A foreign key is a column that links to the primary key of another table to create a relationship between the two.
+
+Key points:
+Ensures referential integrity
+
+Prevents actions that would leave orphan records
+
+Can be used to join tables in queries
+Example:
+
+CREATE TABLE Orders (
+    order_id INT PRIMARY KEY,
+    emp_id INT,
+    FOREIGN KEY (emp_id) REFERENCES Employee(emp_id)
+);
