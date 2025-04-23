@@ -1,0 +1,19 @@
+What is an index in SQL? Why is it used?
+An index is a data structure used to quickly locate rows in a table without scanning the entire table.
+
+Works like a book index – helps you jump directly to relevant data.
+Key points:
+Improves query performance, especially with large tables.
+
+Types of indexes:
+
+Single-column index
+
+Composite index (multiple columns)
+
+Unique index (prevents duplicate values)
+
+Downside: Slows down INSERT, UPDATE, and DELETE operations due to index maintenance.
+
+ Example:
+CREATE INDEX idx_employee_name ON Employee(name);
