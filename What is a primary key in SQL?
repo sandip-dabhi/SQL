@@ -1,0 +1,16 @@
+What is a primary key in SQL?
+A primary key is a column (or set of columns) that uniquely identifies each row in a table.
+
+ Features:
+Must contain unique values
+
+Cannot contain NULL
+
+Each table can have only one primary key
+
+ Example:
+
+CREATE TABLE Employee (
+    emp_id INT PRIMARY KEY,
+    name VARCHAR(100)
+);
