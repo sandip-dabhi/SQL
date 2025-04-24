@@ -1,0 +1,13 @@
+What is a NULL value in SQL? How is it different from an empty string or zero?
+A NULL value represents missing or unknown data in SQL.
+
+ Key points:
+NULL is not the same as an empty string ("") or zero (0).
+
+NULL means no value has been assigned or is unknown.
+
+NULL cannot be compared directly with other values using = or <>. Instead, use IS NULL or IS NOT NULL.
+
+ Example:
+
+SELECT name FROM Employees WHERE salary IS NULL;
