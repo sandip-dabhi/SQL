@@ -1,0 +1,21 @@
+What is the difference between GROUP BY and ORDER BY in SQL?
+ GROUP BY:
+Used to group rows that have the same values into summary rows, like aggregating data (e.g., COUNT, AVG).
+
+Often used with aggregate functions like SUM, AVG, COUNT, MIN, MAX.
+
+ ORDER BY:
+Used to sort the result set based on one or more columns.
+
+Allows ascending (ASC) or descending (DESC) sorting.
+
+ Key Differences:
+GROUP BY groups rows based on column values.
+
+ORDER BY sorts the entire result set after it is processed.
+
+ Example:
+
+SELECT department, COUNT(*) FROM Employees
+GROUP BY department
+ORDER BY COUNT(*) DESC;
