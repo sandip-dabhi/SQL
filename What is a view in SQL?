@@ -1,0 +1,18 @@
+What is a view in SQL?
+A view is a virtual table based on the result set of a SQL query.
+
+It does not store data physically, only the SQL query is stored.
+
+ Key points:
+Helps in simplifying complex queries.
+
+Improves security by restricting access to specific columns/rows.
+
+Can be used to hide complexity and present a simpler interface.
+
+ Example:
+
+CREATE VIEW EmployeeView AS
+SELECT emp_id, name
+FROM Employee
+WHERE active = 1;
