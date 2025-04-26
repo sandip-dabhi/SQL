@@ -1,0 +1,24 @@
+What is a subquery in SQL?
+A subquery is a query inside another query.
+
+It is used to fetch data that will be used by the main (outer) query.
+
+Can be placed in SELECT, FROM, or WHERE clauses.
+
+ Types of Subqueries:
+Single-row subquery: Returns only one row.
+
+Multi-row subquery: Returns multiple rows.
+
+Correlated subquery: Depends on the outer query for its value.
+
+ Key points:
+Helps break complex queries into smaller parts.
+
+Useful for filtering, comparison, and calculation.
+
+ Example (Subquery in WHERE clause):
+
+SELECT name 
+FROM Employee 
+WHERE salary > (SELECT AVG(salary) FROM Employee);
