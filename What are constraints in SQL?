@@ -1,0 +1,21 @@
+What are constraints in SQL?
+Constraints are rules enforced on data columns to ensure data accuracy and integrity.
+
+ Common types of constraints:
+PRIMARY KEY: Ensures each record is unique and not NULL.
+
+FOREIGN KEY: Enforces a relationship between tables.
+
+UNIQUE: Ensures all values in a column are different.
+
+NOT NULL: Ensures a column cannot have NULL values.
+
+CHECK: Limits the range of values a column can accept.
+
+DEFAULT: Sets a default value for a column when no value is specified.
+
+ Example:
+CREATE TABLE Employee (
+  emp_id INT PRIMARY KEY,
+  salary INT CHECK (salary > 0)
+);
