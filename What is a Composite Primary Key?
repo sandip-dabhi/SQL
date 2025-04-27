@@ -1,0 +1,19 @@
+What is a Composite Primary Key?
+A composite primary key is a primary key made up of two or more columns.
+
+Ensures uniqueness based on the combination of values, not a single column alone.
+
+ Key points:
+
+Used when one column alone cannot uniquely identify a row.
+
+All columns in the composite key must be NOT NULL.
+
+ Example:
+
+CREATE TABLE Enrollment (
+    student_id INT,
+    course_id INT,
+    enrollment_date DATE,
+    PRIMARY KEY (student_id, course_id)
+);
