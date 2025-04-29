@@ -1,0 +1,25 @@
+What is the difference between HAVING and WHERE clause in SQL?
+ WHERE:
+
+Filters rows before any grouping or aggregation.
+
+Cannot be used with aggregate functions like SUM(), COUNT(), etc.
+
+ HAVING:
+
+Filters groups after aggregation has been performed.
+
+Used with GROUP BY and aggregate functions.
+
+ Example:
+
+-- WHERE filters before grouping
+SELECT department, salary
+FROM Employee
+WHERE salary > 50000;
+
+-- HAVING filters after grouping
+SELECT department, COUNT(*) AS emp_count
+FROM Employee
+GROUP BY department
+HAVING COUNT(*) > 5;
