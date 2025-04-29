@@ -1,0 +1,15 @@
+What is an Index in SQL?
+An index is a database structure that improves the speed of data retrieval operations.
+
+ Key Points:
+
+Works like an index in a book: helps locate data quickly.
+
+Especially helpful on large tables and for columns used in WHERE, JOIN, or ORDER BY.
+
+Too many indexes can slow down INSERT/UPDATE/DELETE operations due to maintenance overhead.
+
+ Example:
+
+CREATE INDEX idx_employee_name
+ON Employee (name);
