@@ -1,0 +1,11 @@
+What is a UNIQUE constraint in SQL?
+The UNIQUE constraint ensures that all values in a column (or group of columns) are distinct.
+
+Unlike PRIMARY KEY, a table can have multiple UNIQUE constraints, and columns can contain NULLs.
+
+ Example:
+
+CREATE TABLE Users (
+  user_id INT PRIMARY KEY,
+  email VARCHAR(100) UNIQUE
+);
