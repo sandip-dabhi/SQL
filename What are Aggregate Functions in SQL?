@@ -1,0 +1,20 @@
+What are Aggregate Functions in SQL?
+Aggregate functions perform calculations on multiple rows of a table and return a single result.
+
+ Common aggregate functions:
+
+SUM() – Adds all values
+
+AVG() – Calculates average
+
+COUNT() – Counts rows
+
+MAX() – Finds maximum
+
+MIN() – Finds minimum
+
+ Example:
+
+SELECT department, COUNT(*) AS total_employees, AVG(salary) AS avg_salary
+FROM Employee
+GROUP BY department;
