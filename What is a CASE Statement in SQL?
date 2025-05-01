@@ -1,0 +1,20 @@
+What is a CASE Statement in SQL?
+The CASE statement is SQL’s way of adding conditional logic to queries.
+
+Works like IF-ELSE in programming languages.
+
+ Key Points:
+
+Returns different values based on conditions.
+
+Can be used in SELECT, ORDER BY, WHERE, etc.
+
+ Example:
+
+SELECT name, salary,
+  CASE
+    WHEN salary >= 100000 THEN 'High Earner'
+    WHEN salary >= 50000 THEN 'Mid Earner'
+    ELSE 'Low Earner'
+  END AS salary_category
+FROM Employee;
