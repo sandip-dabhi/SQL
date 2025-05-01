@@ -1,0 +1,14 @@
+What is Data Integrity in SQL?
+Data integrity ensures the accuracy, consistency, and reliability of data in a database.
+
+ Types:
+
+Entity Integrity → enforced by primary keys.
+
+Referential Integrity → enforced by foreign keys.
+
+Domain Integrity → enforced by data types, constraints (CHECK, NOT NULL).
+
+ Example:
+
+A foreign key constraint prevents assigning a department ID that doesn’t exist in the Department table.
