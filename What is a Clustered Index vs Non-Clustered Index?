@@ -1,0 +1,17 @@
+What is a Clustered Index vs Non-Clustered Index?
+ Clustered Index:
+
+Sorts and stores table data physically in the index order.
+
+Only one clustered index per table (because data can only be sorted one way).
+
+ Non-Clustered Index:
+
+Creates a separate structure that points to the actual data.
+
+Can have multiple non-clustered indexes per table.
+
+ Example:
+
+CREATE CLUSTERED INDEX idx_emp_id ON Employee(emp_id);
+CREATE NONCLUSTERED INDEX idx_emp_name ON Employee(emp_name);
