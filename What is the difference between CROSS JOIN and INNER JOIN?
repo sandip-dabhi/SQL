@@ -1,0 +1,8 @@
+What is the difference between CROSS JOIN and INNER JOIN?
+ CROSS JOIN returns cartesian product → all possible row combinations between two tables.
+ INNER JOIN returns only rows that satisfy a matching condition.
+
+Example:
+SELECT * FROM A CROSS JOIN B;
+vs
+SELECT * FROM A INNER JOIN B ON A.id = B.a_id;
