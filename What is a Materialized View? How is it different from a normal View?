@@ -1,0 +1,6 @@
+ What is a Materialized View? How is it different from a normal View?
+ A Materialized View stores the result of a query physically (like a snapshot of data), unlike a normal view which is virtual and fetches live data every time.
+ It needs to be refreshed manually or on schedule to update its data.
+
+Example use case: When querying large datasets frequently with the same query, materialized views improve performance.
+
