@@ -1,0 +1,11 @@
+Explain SQL Injection. How can you prevent it?
+ SQL Injection is a security vulnerability where an attacker inserts malicious SQL code into an input field to manipulate or access the database.
+ Can lead to data breaches, deletion, or unauthorized access.
+
+Prevention Techniques:
+
+Use Prepared Statements (Parameterized Queries).
+
+Validate and sanitize user input.
+
+Use ORM frameworks or stored procedures.
