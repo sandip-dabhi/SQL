@@ -1,0 +1,14 @@
+What is a Pivot Table (PIVOT operator) in SQL?
+ A pivot table transforms rows into columns to summarize or reorganize data.
+ Useful for reporting and data analysis.
+
+ Example:
+
+SELECT *
+FROM (
+  SELECT Department, Salary
+  FROM Employee
+) AS SourceTable
+PIVOT (
+  AVG(Salary) FOR Department IN ([HR], [IT], [Finance])
+) AS PivotTable;
