@@ -1,0 +1,26 @@
+ What is a Stored Function vs Stored Procedure?
+ Stored Function:
+
+Always returns a value.
+
+Can be used inside SELECT queries.
+
+ Stored Procedure:
+
+May or may not return a value.
+
+Called using CALL or EXEC, can't be used in SELECT.
+
+ Example:
+
+ Function
+CREATE FUNCTION GetBonus (salary INT) RETURNS INT
+BEGIN
+  RETURN salary * 0.1;
+END;
+
+Procedure
+CREATE PROCEDURE GiveRaise(IN emp_id INT)
+BEGIN
+  UPDATE Employee SET salary = salary * 1.1 WHERE id = emp_id;
+END;
