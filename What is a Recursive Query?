@@ -1,0 +1,13 @@
+What is a Recursive Query?
+ A recursive query calls itself to fetch hierarchical data (e.g., org charts, folder structures).
+ Typically uses a CTE with RECURSIVE keyword.
+ Example:
+
+WITH RECURSIVE EmployeeHierarchy AS (
+  SELECT id, name, manager_id FROM Employee WHERE manager_id IS NULL
+  UNION ALL
+  SELECT e.id, e.name, e.manager_id
+  FROM Employee e
+  JOIN EmployeeHierarchy eh ON e.manager_id = eh.id
+)
+SELECT * FROM EmployeeHierarchy;
