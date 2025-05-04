@@ -1,0 +1,28 @@
+What is the difference between RANK(), DENSE_RANK(), and ROW_NUMBER()?
+ROW_NUMBER():
+
+Assigns a unique sequential number to each row.
+
+Does not handle ties → if two rows have the same value, they still get different row numbers.
+
+Always increments by 1.
+
+ RANK():
+
+Assigns the same rank to tied rows (rows with the same value).
+
+Skips rank numbers after ties → e.g., if two rows are rank 1, the next rank will be 3.
+
+ DENSE_RANK():
+
+Assigns the same rank to tied rows (like RANK).
+
+Does NOT skip rank numbers → e.g., if two rows are rank 1, the next rank is 2.
+
+ Example:
+
+SELECT name, salary,
+       ROW_NUMBER() OVER (ORDER BY salary DESC) AS row_num,
+       RANK() OVER (ORDER BY salary DESC) AS rank_num,
+       DENSE_RANK() OVER (ORDER BY salary DESC) AS dense_rank_num
+FROM Employee;
