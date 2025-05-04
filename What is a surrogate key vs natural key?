@@ -1,0 +1,8 @@
+What is a surrogate key vs natural key?
+ Natural Key:
+
+A key that already exists in real-world data (e.g., Social Security Number, Email).
+
+ Surrogate Key:
+
+An artificially generated unique key (e.g., auto-increment ID).
