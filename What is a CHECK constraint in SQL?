@@ -1,0 +1,11 @@
+What is a CHECK constraint in SQL?
+ The CHECK constraint ensures that values in a column satisfy a specific condition.
+ It enforces domain-level integrity.
+
+ Example:
+
+CREATE TABLE Employee (
+  id INT PRIMARY KEY,
+  name VARCHAR(50),
+  salary INT CHECK (salary > 0)
+);
